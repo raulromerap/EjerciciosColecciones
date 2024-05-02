@@ -1,13 +1,14 @@
 package ejercicios_salva;
 
-import java.util.LinkedHashSet;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Ejercicio04 {
 
 	public static void main(String[] args) {
-		Set<String> nombres = new LinkedHashSet<>();
+		List<String> nombres = new LinkedList<>();
 		String n = "";
 		Scanner sc = new Scanner(System.in);
 		
@@ -16,10 +17,16 @@ public class Ejercicio04 {
 			System.out.println("Inserta un nombre");
 			n = sc.nextLine();
 			
-			nombres.add(n);
+			if(!nombres.contains(n))
+				nombres.add(n);
+			
 		} while (nombres.size() < 5);
 		
+		Collections.reverse(nombres);
+		
 		System.out.println(nombres);
+		
+		sc.close();
 	}
 
 }

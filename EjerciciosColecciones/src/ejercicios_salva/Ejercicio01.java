@@ -8,7 +8,7 @@ import java.util.List;
 public class Ejercicio01 {
 
 	public static void main(String[] args) {
-		List<Integer> lista = new ArrayList();
+		List<Integer> lista = new ArrayList<>();
 		
 		for (int i=0; i<10; i++) {
 			lista.add(i, i+1);

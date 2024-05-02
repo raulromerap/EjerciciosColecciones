@@ -8,7 +8,7 @@ import java.util.Set;
 public class Ejercicio02 {
 
 	public static void main(String[] args) {
-		Set<Integer> set = new LinkedHashSet();
+		Set<Integer> set = new LinkedHashSet<>();
 		Random rn = new Random();
 		
 		while(set.size() < 10) {
